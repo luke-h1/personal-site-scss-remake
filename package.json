@@ -1,0 +1,23 @@
+{
+  "name": "scss-misc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luke-h1/scss-misc.git"
+  },
+  "author": "luke-h1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luke-h1/scss-misc/issues"
+  },
+  "homepage": "https://github.com/luke-h1/scss-misc#readme",
+  "devDependencies": {
+    "sass": "^1.26.10"
+  }
+}
