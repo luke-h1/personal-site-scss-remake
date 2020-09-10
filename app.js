@@ -20,6 +20,12 @@ const theme = localStorage.getItem('theme');
 //   localStorage.setItem('theme', mode);
 // }
 
+document.querySelector('[data-switch-dark]').addEventListener('click', function() {
+  document.body.classList.toggle('dark');
+});
+
+
+
 // Scroll To Top BTN
 const rootEl = document.documentElement;
 const topBtn = document.querySelector('.scrollToTopBtn');

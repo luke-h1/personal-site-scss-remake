@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+body.dark {
+  background-color: #000;
+  color: #000;
+}
+
 html {
   scroll-behavior: smooth;
 }
