@@ -158,10 +158,10 @@ DARK MODE SWITCHER END
 .nav-wrapper {
   grid-area: nav-wrapper;
   display: flex;
-  color: var(--background-dark);
+  color: var(--main-text);
   justify-content: space-between;
   align-items: center;
-  background-color: var(--maain-color);
+  background-color: var(--main-color);
   border-radius: 5px 5px 0 0;
   a {
     color: var(--main-text);
@@ -193,6 +193,7 @@ DARK MODE SWITCHER END
  Navigation properties (social icons, a, i, current class, btn-wrapper) 
  START
  ===================================================================== */
+
 //  REFACTOR THIS LATER !
 .social-list__item {
   list-style: none;
@@ -200,11 +201,11 @@ DARK MODE SWITCHER END
   justify-content: center;
   margin: 2em 0 0;
   padding: 0;
-  color: var(--main-text);
+  color: var(--link-color);
 }
 
 .social-list__link {
-  color: var(--background-dark);
+  color: var(--link-color);
   padding: 0 1em 0 1em;
 }
 
@@ -244,7 +245,7 @@ i:hover {
  ===================================================================== */
 
 .btn-container {
-  background-color: var(--background-dark);
+  background-color: var(--btn-container);
 }
 
 /* ===============
@@ -363,6 +364,9 @@ i:hover {
   flex-direction: column;
   justify-content: center;
   background-color: var(--preview-shadow);
+  h4 {
+    color: var(--dark-text);
+  }
 }
 #social-img {
   width: 100%;
@@ -429,7 +433,7 @@ i:hover {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: var(--secondary-color);
+  color: var(--main-text);
   background-color: vaar(--button-color);
   border: none;
 }
@@ -468,6 +472,7 @@ i:hover {
   margin-bottom: 1em;
   margin-top: 1em;
   text-align: center;
+  border: 1px solid var(--border-color);
   img {
     object-fit: cover;
     border-radius: 30%;
@@ -501,7 +506,7 @@ SCROLL TO TOP START
   text-align: center;
   margin: 0 auto;
   border-radius: 20%;
-  background-color: var(--secondary-color);
+  background-color: var(--preview-shadow);
   i {
     font-size: 25px;
   }

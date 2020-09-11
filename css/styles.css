@@ -5,6 +5,8 @@
 :root {
   --main-color: #eaeaea;
   --background-dark: #000;
+  --btn-container: #fff;
+  --link-color: #000;
   --secondary-color: #fff;
   --border-color: #c1c1c1;
   --border-color-dark: #000;
@@ -15,6 +17,7 @@
   --button-color: #000;
   --preview-bg: rgb(251, 249, 243, 0.8);
   --link-color: #17a2b8;
+  --dark-text: #000;
   --dot-1: #fc6058;
   --dot-2: #fec02f;
   --dot-3: #2aca3e;
@@ -24,18 +27,21 @@
 }
 
 [data-theme=dark] {
-  --main-color: #eaeaea;
+  --btn-container: #000;
+  --link-color: #fff;
+  --main-color: #000;
   --background-dark: #000;
-  --secondary-color: #fff;
+  --secondary-color: #000;
   --border-color: #c1c1c1;
-  --border-color-dark: #000;
-  --main-text: #000;
+  --border-color-dark: #fff;
+  --main-text: #fff;
   --secondary-text: #4b5156;
-  --theme-dot-border: #24292e;
+  --theme-dot-border: #fff;
   --preview-shadow: #f0ead6;
-  --button-color: #000;
+  --button-color: #fff;
   --preview-bg: rgb(251, 249, 243, 0.8);
   --link-color: #17a2b8;
+  --dark-text: #000;
   --dot-1: #fc6058;
   --dot-2: #fec02f;
   --dot-3: #2aca3e;
@@ -317,10 +323,10 @@ DARK MODE SWITCHER END
 .nav-wrapper {
   grid-area: nav-wrapper;
   display: flex;
-  color: var(--background-dark);
+  color: var(--main-text);
   justify-content: space-between;
   align-items: center;
-  background-color: var(--maain-color);
+  background-color: var(--main-color);
   border-radius: 5px 5px 0 0;
 }
 .nav-wrapper a {
@@ -357,11 +363,11 @@ DARK MODE SWITCHER END
   justify-content: center;
   margin: 2em 0 0;
   padding: 0;
-  color: var(--main-text);
+  color: var(--link-color);
 }
 
 .social-list__link {
-  color: var(--background-dark);
+  color: var(--link-color);
   padding: 0 1em 0 1em;
 }
 
@@ -400,7 +406,7 @@ i:hover {
  END 
  ===================================================================== */
 .btn-container {
-  background-color: var(--background-dark);
+  background-color: var(--btn-container);
 }
 
 /* ===============
@@ -520,6 +526,9 @@ i:hover {
   justify-content: center;
   background-color: var(--preview-shadow);
 }
+#skills h4 {
+  color: var(--dark-text);
+}
 
 #social-img {
   width: 100%;
@@ -586,7 +595,7 @@ i:hover {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: var(--secondary-color);
+  color: var(--main-text);
   background-color: vaar(--button-color);
   border: none;
 }
@@ -625,6 +634,7 @@ i:hover {
   margin-bottom: 1em;
   margin-top: 1em;
   text-align: center;
+  border: 1px solid var(--border-color);
 }
 .container img {
   object-fit: cover;
@@ -659,7 +669,7 @@ SCROLL TO TOP START
   text-align: center;
   margin: 0 auto;
   border-radius: 20%;
-  background-color: var(--secondary-color);
+  background-color: var(--preview-shadow);
 }
 .scrollToTopBtn i {
   font-size: 25px;

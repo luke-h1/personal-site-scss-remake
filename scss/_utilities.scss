@@ -6,6 +6,8 @@
 :root {
   --main-color: #eaeaea;
   --background-dark: #000;
+  --btn-container: #fff;
+  --link-color: #000;
   --secondary-color: #fff;
   --border-color: #c1c1c1;
   --border-color-dark: #000;
@@ -16,6 +18,7 @@
   --button-color: #000;
   --preview-bg: rgb(251, 249, 243, 0.8);
   --link-color: #17a2b8;
+  --dark-text: #000;
   --dot-1: #fc6058;
   --dot-2: #fec02f;
   --dot-3: #2aca3e;
@@ -25,18 +28,21 @@
 }
 
 [data-theme="dark"] {
-  --main-color: #eaeaea;
+  --btn-container: #000;
+  --link-color: #fff;
+  --main-color: #000;
   --background-dark: #000;
-  --secondary-color: #fff;
+  --secondary-color: #000;
   --border-color: #c1c1c1;
-  --border-color-dark: #000;
-  --main-text: #000;
+  --border-color-dark: #fff;
+  --main-text: #fff;
   --secondary-text: #4b5156;
-  --theme-dot-border: #24292e;
+  --theme-dot-border: #fff;
   --preview-shadow: #f0ead6;
-  --button-color: #000;
+  --button-color: #fff;
   --preview-bg: rgb(251, 249, 243, 0.8);
   --link-color: #17a2b8;
+  --dark-text: #000;
   --dot-1: #fc6058;
   --dot-2: #fec02f;
   --dot-3: #2aca3e;
