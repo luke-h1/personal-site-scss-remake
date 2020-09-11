@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: $main-color;
+  background-color: var(--main-color);
   align-items: center;
   justify-content: center;
   transform: background 0.3s linear;
@@ -25,7 +25,7 @@ DARK MODE SWITCHER START
 }
 
 .label {
-  background-color: $background-dark;
+  background-color: var(--background-dark);
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -38,7 +38,7 @@ DARK MODE SWITCHER START
 }
 
 .label .ball {
-  background-color: $main-color;
+  background-color: var(--main-color);
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -69,7 +69,7 @@ DARK MODE SWITCHER START
 }
 
 .up-icon {
-  color: $background-dark;
+  color: var(--background-dark);
 }
 
 /*=======================
@@ -81,8 +81,8 @@ DARK MODE SWITCHER END
   SECTION ONE START
 ==================*/
 .s1 {
-  background-color: $main-color;
-  border-bottom: 1px solid $border-color;
+  background-color: var(--main-color);
+  border-bottom: 1px solid var(--border-color);
   overflow: hidden;
 }
 
@@ -96,8 +96,8 @@ DARK MODE SWITCHER END
   SECTION TWO START
 ==================*/
 .s2 {
-  background-color: $secondary-color;
-  border-bottom: 1px solid $border-color;
+  background-color: var(--secondary-color);
+  border-bottom: 1px solid var(--border-color);
   overflow: auto;
 }
 
@@ -113,18 +113,18 @@ DARK MODE SWITCHER END
   align-content: center;
   text-align: center;
   -webkit-text-fill-color: transparent;
-  font-family: $russo;
+  font-family: var(--ruso);
 }
 
 .h2-intro-text {
   background: linear-gradient(90deg, #2a65f8, #3bd86d);
   -webkit-background-clip: text;
-  font-family: $russo;
+  font-family: var(--ruso);
 }
 
 .intro-wrapper {
-  background-color: $secondary-color;
-  border: 1px solid $border-color;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
   border-radius: 5px 5px 0 0;
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -158,13 +158,13 @@ DARK MODE SWITCHER END
 .nav-wrapper {
   grid-area: nav-wrapper;
   display: flex;
-  color: $background-dark;
+  color: var(--background-dark);
   justify-content: space-between;
   align-items: center;
-  background-color: $main-color;
+  background-color: var(--maain-color);
   border-radius: 5px 5px 0 0;
   a {
-    color: $main-text;
+    color: var(--main-text);
     font-size: 20px;
     margin-right: 1em;
     outline: 0;
@@ -173,7 +173,7 @@ DARK MODE SWITCHER END
 }
 
 .navigation {
-  background-color: $background-dark;
+  background-color: var(--background-dark);
   padding: 25px;
   width: 100%;
   text-align: center;
@@ -181,7 +181,7 @@ DARK MODE SWITCHER END
 
 .navigation--item {
   font-size: 22px;
-  font-family: $roboto;
+  font-family: var(--roboto);
   margin-left: 0.9em;
 }
 
@@ -200,16 +200,16 @@ DARK MODE SWITCHER END
   justify-content: center;
   margin: 2em 0 0;
   padding: 0;
-  color: $main-text;
+  color: var(--main-text);
 }
 
 .social-list__link {
-  color: $background-dark;
+  color: var(--background-dark);
   padding: 0 1em 0 1em;
 }
 
 #navigation a {
-  color: $main-text;
+  color: var(--main-text);
 }
 
 i:hover {
@@ -226,7 +226,7 @@ i:hover {
 }
 
 .current {
-  border-bottom: $border-color-dark;
+  border-bottom: var(--border-color-dark);
 }
 
 #contact-form label {
@@ -244,7 +244,7 @@ i:hover {
  ===================================================================== */
 
 .btn-container {
-  background-color: $background-dark;
+  background-color: var(--background-dark);
 }
 
 /* ===============
@@ -256,7 +256,7 @@ i:hover {
 }
 
 .browser-dot {
-  background-color: $background-dark;
+  background-color: var(--background-dark);
   height: 15px;
   width: 15px;
   border-radius: 50%;
@@ -270,7 +270,7 @@ i:hover {
   height: 200px;
   width: 200px;
   object-fit: cover;
-  border: 2px solid $border-color;
+  border: 2px solid var(--border-color);
   display: block;
   margin: 0 auto;
   margin-bottom: 1em;
@@ -280,8 +280,8 @@ i:hover {
   height: 30px;
   width: 30px;
   margin: 5px;
-  border: 2px solid $theme-dot-border;
-  background-color: $background-dark;
+  border: 2px solid var(--theme-dot-border);
+  background-color: var(--background-dark);
   border-radius: 50%;
   -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
@@ -294,15 +294,15 @@ i:hover {
 }
 
 #dot-1 {
-  background-color: $dot-1;
+  background-color: var(--dot-1);
 }
 
 #dot-2 {
-  background-color: $dot-2;
+  background-color: var(--dot-2);
 }
 
 #dot-3 {
-  background-color: $dot-3;
+  background-color: var(--dot-3);
 }
 /* ===============
   DOTS END 
@@ -333,7 +333,7 @@ i:hover {
 }
 
 #preview-shadow {
-  background-color: $preview-shadow;
+  background-color: var(--preview-shadow);
   width: 300px;
   height: 180px;
   padding-left: 30px;
@@ -343,7 +343,7 @@ i:hover {
 #preview {
   width: 300px;
   border: 1.5px solid #17a2b8;
-  background-color: $preview-bg;
+  background-color: var(--preview-bg);
   padding: 15px;
   position: relative;
 }
@@ -362,7 +362,7 @@ i:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: $preview-shadow;
+  background-color: var(--preview-shadow);
 }
 #social-img {
   width: 100%;
@@ -393,7 +393,7 @@ i:hover {
 }
 
 .post-preview {
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   padding: 25px;
   border-radius: 15px;
 }
@@ -406,7 +406,7 @@ i:hover {
 }
 
 .post-title {
-  color: $main-text;
+  color: var(--main-text);
   margin: 0;
 }
 
@@ -429,8 +429,8 @@ i:hover {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: $secondary-color;
-  background-color: $button-color;
+  color: var(--secondary-color);
+  background-color: vaar(--button-color);
   border: none;
 }
 
@@ -447,9 +447,9 @@ i:hover {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   border-radius: 5px;
-  border: 1px solid $border-color;
+  border: 1px solid var(--border-color);
   font-size: 14px;
 }
 
@@ -460,7 +460,7 @@ i:hover {
 }
 
 .container {
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   width: 750px;
@@ -501,7 +501,7 @@ SCROLL TO TOP START
   text-align: center;
   margin: 0 auto;
   border-radius: 20%;
-  background-color: $secondary-color;
+  background-color: var(--secondary-color);
   i {
     font-size: 25px;
   }
@@ -535,4 +535,3 @@ UL NAV ITEMS
 .projects:hover {
   color: #17a2b8;
 }
-

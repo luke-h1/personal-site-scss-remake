@@ -3,35 +3,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
 
-// COLORS
-$main-color: #eaeaea;
-$background-dark: #000;
-$secondary-color: #fff;
-$border-color: #c1c1c1;
-$border-color-dark: #000;
-$main-text: #000;
-$secondary-text: #4b5156;
-$theme-dot-border: #24292e;
-$preview-shadow: #f0ead6;
-$button-color: #000;
-$preview-bg: rgb(251, 249, 243, 0.8);
-$link-color: #17a2b8;
-$dot-1: #fc6058;
-$dot-2: #fec02f;
-$dot-3: #2aca3e;
-
-
-
-[data-theme="dark"] { 
-  $main-color: #000;
-  
+:root {
+  --main-color: #eaeaea;
+  --background-dark: #000;
+  --secondary-color: #fff;
+  --border-color: #c1c1c1;
+  --border-color-dark: #000;
+  --main-text: #000;
+  --secondary-text: #4b5156;
+  --theme-dot-border: #24292e;
+  --preview-shadow: #f0ead6;
+  --button-color: #000;
+  --preview-bg: rgb(251, 249, 243, 0.8);
+  --link-color: #17a2b8;
+  --dot-1: #fc6058;
+  --dot-2: #fec02f;
+  --dot-3: #2aca3e;
+  --ruso: "Russo One", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --kumbho: "Kumbh Sans", sans-serif;
 }
 
-
-// FONTS
-$roboto: "Roboto", sans-serif;
-$russo: "Russo One", sans-serif;
-$kumbho: "Kumbh Sans", sans-serif;
+[data-theme="dark"] {
+  --main-color: #eaeaea;
+  --background-dark: #000;
+  --secondary-color: #fff;
+  --border-color: #c1c1c1;
+  --border-color-dark: #000;
+  --main-text: #000;
+  --secondary-text: #4b5156;
+  --theme-dot-border: #24292e;
+  --preview-shadow: #f0ead6;
+  --button-color: #000;
+  --preview-bg: rgb(251, 249, 243, 0.8);
+  --link-color: #17a2b8;
+  --dot-1: #fc6058;
+  --dot-2: #fec02f;
+  --dot-3: #2aca3e;
+  --ruso: "Russo One", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --kumbho: "Kumbh Sans", sans-serif;
+}
 
 h1 {
   font-size: 56px;
@@ -59,7 +71,7 @@ h4,
 h5,
 h6,
 strong {
-  color: $main-text;
+  color: var(--main-text);
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
 }
@@ -67,7 +79,7 @@ strong {
 
 a {
   text-decoration: none;
-  color: $link-color;
+  color: var(--link-color);
   outline: 0;
 }
 ul {
@@ -81,7 +93,7 @@ input,
 textarea,
 ul,
 li {
-  color: $secondary-text;
+  color: var(--secondary-text);
   font-family: "Roboto Mono", monospace;
 }
 
