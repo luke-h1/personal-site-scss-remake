@@ -1,6 +1,5 @@
 @import "config";
 @import "utilities";
-@import "dark-mode";
 @import "mobile";
 
 html {
@@ -14,107 +13,12 @@ body {
   transform: background 0.3s linear;
   padding: 0;
   margin: 0;
-  // Media queries
-  @media screen and (max-width: 1200px) {
-    .main-container {
-      width: 95%;
-      margin: 0 auto;
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    .intro-wrapper {
-      grid-template-columns: 1fr;
-      /* grid-template-rows: 3em 30em; */
-      grid-template-areas:
-        "nav-wrapper"
-        "left-column"
-        "right-column";
-    }
-
-    .right-column {
-      justify-content: center;
-    }
-  }
-
-  @media (max-width: 800px) {
-    .container {
-      display: flex;
-      flex-direction: column;
-      max-width: 80%;
-      margin: 1em 0 1em 1em;
-    }
-  }
-
-  .icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-// Maybe put this in utilities ?
-h1 {
-  font-size: 56px;
-}
-h2 {
-  font-size: 36px;
-}
-h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 20px;
-}
-h6 {
-  font-size: 16px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-  color: $main-text;
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 500;
-}
-// Maybe put this in utilities ?
-
-a {
-  text-decoration: none;
-  color: $link-color;
-  outline: 0;
-}
-ul {
-  list-style: none;
-}
-
-p,
-span,
-label,
-input,
-textarea,
-ul,
-li {
-  color: $secondary-text;
-  font-family: "Roboto Mono", monospace;
-}
-
-p {
-  font-family: "Kumbh Sans", sans-serif;
-  font-size: 20px;
+  @import "mobile"; // media queries
 }
 
 /*=======================
 DARK MODE SWITCHER START 
 ========================*/
-
 
 /*=======================
 DARK MODE SWITCHER END 
@@ -191,7 +95,7 @@ DARK MODE SWITCHER END
 ==================*/
 
 /* ===============
-  NAVIGATION START  // REFACTOR THIS LATER ! 
+  NAVIGATION START  
  ===============*/
 
 .icon-wrapper i {
@@ -580,12 +484,3 @@ UL NAV ITEMS
   color: #17a2b8;
 }
 
-/*================
-DARK MODE SWITCHER 
-==================*/
-
-
-/* 
-=====================
-  MEDIA QUERIES 
-=====================*/
