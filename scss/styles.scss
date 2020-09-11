@@ -1,5 +1,5 @@
-@import 'config';
-@import 'utilities';
+@import "config";
+@import "utilities";
 
 html {
   scroll-behavior: smooth;
@@ -42,7 +42,7 @@ h5,
 h6,
 strong {
   color: var(--mainText);
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
 }
 // Maybe put this in utilities ?
@@ -64,11 +64,11 @@ textarea,
 ul,
 li {
   color: $secondary-text;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 p {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   font-size: 20px;
 }
 
@@ -165,8 +165,8 @@ DARK MODE SWITCHER END
   grid-template-columns: 1fr, 1fr;
   /* grid-template-rows: 3em 30em; */
   grid-template-areas:
-    'nav-wrapper  nav-wrapper'
-    'left-column right-column';
+    "nav-wrapper  nav-wrapper"
+    "left-column right-column";
 }
 
 .project-title-text {
@@ -500,20 +500,19 @@ i:hover {
   margin-bottom: 1em;
   margin-top: 1em;
   text-align: center;
+  img {
+    object-fit: cover;
+    border-radius: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 25%;
+  }
 }
 
 .container:first-of-type {
   margin-top: 1em;
-}
-
-.container img {
-  object-fit: cover;
-  border-radius: 30%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  height: 25%;
 }
 
 .card-title {
@@ -589,18 +588,17 @@ DARK MODE SWITCHER
   width: 40px;
   transform: scale(1.5);
   padding: 5px;
-}
-
-.label .ball {
-  background-color: $main-color;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
+  .ball {
+    background-color: $main-color;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
 }
 
 .checkbox:checked + .label .ball {
@@ -630,4 +628,4 @@ DARK MODE SWITCHER
 =====================
   MEDIA QUERIES 
 =====================*/
-@import 'mobile';
+@import "mobile";
