@@ -2,6 +2,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .intro-wrapper {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 3em 30em; */
+    grid-template-areas: "nav-wrapper" "left-column" "right-column";
+  }
+
+  .right-column {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 1em 0 1em 1em;
+  }
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body.dark {
   background-color: #000;
   color: #000;
@@ -450,6 +485,66 @@ body.dark .theme-switcher {
 body.dark .up-icon {
   color: #000;
 }
+@media screen and (max-width: 1200px) {
+  body.dark .main-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  body.dark .intro-wrapper {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 3em 30em; */
+    grid-template-areas: "nav-wrapper" "left-column" "right-column";
+  }
+  body.dark .right-column {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  body.dark .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 1em 0 1em 1em;
+  }
+}
+body.dark .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .intro-wrapper {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 3em 30em; */
+    grid-template-areas: "nav-wrapper" "left-column" "right-column";
+  }
+
+  .right-column {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 1em 0 1em 1em;
+  }
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 html {
   scroll-behavior: smooth;
@@ -462,6 +557,35 @@ body {
   transform: background 0.3s linear;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  body .main-container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  body .intro-wrapper {
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 3em 30em; */
+    grid-template-areas: "nav-wrapper" "left-column" "right-column";
+  }
+  body .right-column {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  body .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 1em 0 1em 1em;
+  }
+}
+body .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -990,92 +1114,9 @@ UL NAV ITEMS
 /*================
 DARK MODE SWITCHER 
 ==================*/
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  background-color: #000;
-  border-radius: 50px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  height: 17px;
-  width: 40px;
-  transform: scale(1.5);
-  padding: 5px;
-}
-.label .ball {
-  background-color: #eaeaea;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
-}
-
-.fa-moon {
-  color: #f1c40f;
-}
-
-.fa-sun {
-  color: #f39c12;
-}
-
-.theme-switcher {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.up-icon {
-  color: #000;
-}
-
 /* 
 =====================
   MEDIA QUERIES 
 =====================*/
-@media screen and (max-width: 1200px) {
-  .main-container {
-    width: 95%;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 800px) {
-  .intro-wrapper {
-    grid-template-columns: 1fr;
-    /* grid-template-rows: 3em 30em; */
-    grid-template-areas: "nav-wrapper" "left-column" "right-column";
-  }
-
-  .right-column {
-    justify-content: center;
-  }
-}
-@media (max-width: 800px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    margin: 1em 0 1em 1em;
-  }
-}
-.icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 /*# sourceMappingURL=styles.css.map */

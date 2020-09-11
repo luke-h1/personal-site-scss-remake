@@ -1,31 +1,3 @@
-const checkbox = document.getElementById('checkbox1');
-const theme = localStorage.getItem('theme');
-
-
-
-// function darkModeSwitcher(event) {
-//   if (event.target.checked) {
-//     setTheme('dark');
-//   } else if (!event.target.checked) {
-//     setTheme('light');
-//   }
-// }
-
-// function setTheme(mode) {
-//   if (mode === 'light') {
-//     document.getElementById('theme-style').href = 'styles.css'; 
-//   } else if (mode === 'dark') {
-//     document.getElementById('theme-style').href = 'dark-mode.css';
-//   }
-//   localStorage.setItem('theme', mode);
-// }
-
-document.querySelector('[data-switch-dark]').addEventListener('click', function() {
-  document.body.classList.toggle('dark');
-});
-
-
-
 // Scroll To Top BTN
 const rootEl = document.documentElement;
 const topBtn = document.querySelector('.scrollToTopBtn');
@@ -45,5 +17,23 @@ function handleScroll() {
 }
 
 // EVENT LISTENERS
-document.addEventListener('scroll', handleScroll); 
-checkbox.addEventListener('change', darkModeSwitcher)
+document.addEventListener('scroll', handleScroll);
+
+// OLD CODE
+
+// function darkModeSwitcher(event) {
+//   if (event.target.checked) {
+//     setTheme('dark');
+//   } else if (!event.target.checked) {
+//     setTheme('light');
+//   }
+// }
+
+// function setTheme(mode) {
+//   if (mode === 'light') {
+//     document.getElementById('theme-style').href = 'styles.css';
+//   } else if (mode === 'dark') {
+//     document.getElementById('theme-style').href = 'dark-mode.css';
+//   }
+//   localStorage.setItem('theme', mode);
+// }
