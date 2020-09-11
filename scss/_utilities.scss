@@ -1,7 +1,7 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
 
 // COLORS
 $main-color: #eaeaea;
@@ -17,15 +17,12 @@ $button-color: #000;
 $preview-bg: rgb(251, 249, 243, 0.8);
 $link-color: #17a2b8;
 $dot-1: #fc6058;
-$dot-2: #fec02f; 
-$dot-3: #2aca3e; 
+$dot-2: #fec02f;
+$dot-3: #2aca3e;
 
 
-body.dark { 
-  background-color: $background-dark;
-  color: $background-dark;
-}
-// FONTS 
-$roboto: 'Roboto', sans-serif; 
-$russo: 'Russo One', sans-serif; 
-$kumbho: 'Kumbh Sans', sans-serif;
+
+// FONTS
+$roboto: "Roboto", sans-serif;
+$russo: "Russo One", sans-serif;
+$kumbho: "Kumbh Sans", sans-serif;

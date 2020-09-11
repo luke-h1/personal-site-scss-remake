@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import "dark-mode";
 
 html {
   scroll-behavior: smooth;
@@ -41,7 +42,7 @@ h4,
 h5,
 h6,
 strong {
-  color: var(--mainText);
+  color: $main-text;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 500;
 }
@@ -75,34 +76,34 @@ p {
 /*=======================
 DARK MODE SWITCHER START 
 ========================*/
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
+// .checkbox {
+//   opacity: 0;
+//   position: absolute;
+// }
 
-.label .ball {
-  background-color: $secondary-color;
-  border-radius: 50%;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 32px;
-  width: 33px;
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
-}
+// .label .ball {
+//   background-color: $secondary-color;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: 2px;
+//   left: 2px;
+//   height: 32px;
+//   width: 33px;
+//   transform: translateX(0px);
+//   transition: transform 0.2s linear;
+// }
 
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
-}
+// .checkbox:checked + .label .ball {
+//   transform: translateX(24px);
+// }
 
-.fa-moon {
-  color: #f1c40f;
-}
+// .fa-moon {
+//   color: #f1c40f;
+// }
 
-.fa-sun {
-  color: #f39c12;
-}
+// .fa-sun {
+//   color: #f39c12;
+// }
 
 /*=======================
 DARK MODE SWITCHER END 
@@ -181,13 +182,6 @@ DARK MODE SWITCHER END
 /* ===============
   NAVIGATION START  // REFACTOR THIS LATER ! 
  ===============*/
-.nav-wrapper a {
-  color: $main-text;
-  font-size: 20px;
-  margin-right: 1em;
-  outline: 0;
-  text-decoration: none;
-}
 
 .icon-wrapper i {
   margin: 0 5px 0 15px;
@@ -202,6 +196,13 @@ DARK MODE SWITCHER END
   align-items: center;
   background-color: $main-color;
   border-radius: 5px 5px 0 0;
+  a {
+    color: $main-text;
+    font-size: 20px;
+    margin-right: 1em;
+    outline: 0;
+    text-decoration: none;
+  }
 }
 
 .navigation {
@@ -534,11 +535,12 @@ SCROLL TO TOP START
   margin: 0 auto;
   border-radius: 20%;
   background-color: $secondary-color;
+  i { 
+    font-size: 25px;
+  }
 }
 
-.scrollToTopBtn i {
-  font-size: 25px;
-}
+
 
 .s1-alt {
   display: flex;
