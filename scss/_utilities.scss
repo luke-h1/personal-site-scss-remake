@@ -21,6 +21,13 @@ $dot-2: #fec02f;
 $dot-3: #2aca3e;
 
 
+
+[data-theme="dark"] { 
+  $main-color: #000;
+  
+}
+
+
 // FONTS
 $roboto: "Roboto", sans-serif;
 $russo: "Russo One", sans-serif;

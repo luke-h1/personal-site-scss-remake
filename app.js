@@ -3,13 +3,11 @@ const rootEl = document.documentElement;
 const topBtn = document.querySelector('.scrollToTopBtn');
 
 // theme switch
-const toggleSwitch = document.querySelector('.checkbox input[type="checkbox"}');
+
+const toggleSwitch = document.querySelector('.checkbox[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 
-
-
-
-// THEME SWITCHER 
+// THEME SWITCHER
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
 
@@ -28,10 +26,7 @@ function switchTheme(e) {
   }
 }
 
-
-
-
-// SCROLL TO TOP 
+// SCROLL TO TOP
 function goToTop() {
   rootEl.scrollTo({ top: 0, behavior: 'smooth' });
 }
